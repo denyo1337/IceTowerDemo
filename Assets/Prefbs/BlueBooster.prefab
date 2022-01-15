@@ -10,9 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1919697039264717527}
   - component: {fileID: 3457684059963194937}
-  - component: {fileID: 4231319315196445414}
   m_Layer: 0
-  m_Name: DbJumpManaPotion
+  m_Name: BlueBooster
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -82,15 +81,3 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &4231319315196445414
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5167216084634226843}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ebc816ef7eb7f24eba1a2903e5a68b9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

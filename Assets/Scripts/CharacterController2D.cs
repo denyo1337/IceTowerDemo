@@ -13,7 +13,7 @@ public class CharacterController2D : MonoBehaviour
 	const float k_GroundedRadius = .2f;
 	[SerializeField] float speedFactor = 4f;
 	const float k_CeilingRadius = .2f;
-	private Rigidbody2D m_Rigidbody2D;
+	public Rigidbody2D m_Rigidbody2D;
 	private bool m_FacingRight = true;
 	private Vector3 m_Velocity = Vector3.zero;
 	[Header("Events")]
@@ -24,7 +24,7 @@ public class CharacterController2D : MonoBehaviour
 	public BoolEvent OnCrouchEvent;
 	private bool m_wasCrouching = false;
 
-	private void Awake()
+    private void Awake()
 	{
 		m_Rigidbody2D = GetComponent<Rigidbody2D>();
 

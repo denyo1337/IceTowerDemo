@@ -30,5 +30,6 @@ public class PlayerMovement : MonoBehaviour
     public void OnLading()
     {
         animator.SetBool("IsJumping", false);
+        animator.SetBool("Bonus", false);
     }
 }
