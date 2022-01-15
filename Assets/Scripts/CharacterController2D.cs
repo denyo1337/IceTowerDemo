@@ -4,44 +4,21 @@ using UnityEngine.Events;
 public class CharacterController2D : MonoBehaviour
 {
 	[SerializeField] private float m_JumpForce = 1200f;			
-	[Range(0, .3f)] [SerializeField] private float m_MovementSmoothing = .05f;	
-	[SerializeField] private bool m_AirControl = false;							
-	[SerializeField] private LayerMask m_WhatIsGround;														
-	[SerializeField] private Transform m_CeilingCheck;							
-	[SerializeField] private Collider2D m_CrouchDisableCollider;
+	[Range(0, .3f)] [SerializeField] private float m_MovementSmoothing = .05f;								
+	[SerializeField] private LayerMask m_WhatIsGround;
 	public bool isGrounded = false;
-	const float k_GroundedRadius = .2f;
 	[SerializeField] float speedFactor = 4f;
-	const float k_CeilingRadius = .2f; 
 	private Rigidbody2D m_Rigidbody2D;
 	private bool m_FacingRight = true;  
 	private Vector3 m_Velocity = Vector3.zero;
-
 	[Header("Events")]
 	[Space]
-
 	public UnityEvent OnLandEvent;
-
 	[System.Serializable]
 	public class BoolEvent : UnityEvent<bool> { }
 
-	public BoolEvent OnCrouchEvent;
-	private bool m_wasCrouching = false;
-
-	private void Awake()
-	{
-		m_Rigidbody2D = GetComponent<Rigidbody2D>();
-
-		if (OnLandEvent == null)
-			OnLandEvent = new UnityEvent();
-
-		if (OnCrouchEvent == null)
-			OnCrouchEvent = new BoolEvent();
-	}
-
 	private void FixedUpdate()
 	{
-
 		bool wasGrounded = isGrounded;
 		isGrounded = IsGrounded();
 
@@ -77,7 +54,6 @@ public class CharacterController2D : MonoBehaviour
         {
 			return true;
         }
-		
 		return false;
     }
     private void Flip()
