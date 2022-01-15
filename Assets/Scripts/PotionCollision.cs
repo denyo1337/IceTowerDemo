@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static AudioManager;
 
 public class PotionCollision : MonoBehaviour
 {
@@ -12,6 +13,10 @@ public class PotionCollision : MonoBehaviour
     {
         _playerController.m_Rigidbody2D.AddForce(new Vector2(0f, 1500f));
         animator.SetBool("Bonus", isBonusActive);
+
+        //AudioManager finding sound and playing it;
+        FindObjectOfType<AudioManager>().Play(SoundNames.Boost);
+
         Destroy(gameObject);
     }
 }

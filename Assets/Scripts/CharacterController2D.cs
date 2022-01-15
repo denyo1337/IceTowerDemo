@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.Events;
+using static AudioManager;
 
 public class CharacterController2D : MonoBehaviour
 {
@@ -25,7 +26,7 @@ public class CharacterController2D : MonoBehaviour
 	private bool m_wasCrouching = false;
 
     private void Awake()
-	{
+	{	
 		m_Rigidbody2D = GetComponent<Rigidbody2D>();
 
 		if (OnLandEvent == null)
@@ -60,8 +61,10 @@ public class CharacterController2D : MonoBehaviour
 		
 		if (jump)
 		{
-			if(isGrounded)
+            if (isGrounded)
+            {
 				m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
+			}
 		}
 	}
     private bool IsGrounded()
