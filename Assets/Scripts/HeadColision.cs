@@ -25,15 +25,16 @@ public class HeadColision : MonoBehaviour
             return;
         if (controller2D.isGrounded)
             return;
-        EnableColliders(false);
+        DisableColliders(false);
     }
-    private void EnableColliders(bool iScollided) 
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        DisableColliders(true);
+    }
+    private void DisableColliders(bool iScollided) 
     {
         headCollider.enabled = iScollided;
         legsCollider.enabled = iScollided;
     }
-    private void OnTriggerExit2D(Collider2D other)
-    {
-        EnableColliders(true);
-    }
+  
 }
