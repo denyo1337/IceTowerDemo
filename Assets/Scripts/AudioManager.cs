@@ -42,5 +42,13 @@ public class AudioManager : MonoBehaviour
         }
         s.source.Play();
     }
+    public void FinishLine()
+    {
+        foreach (var s in sounds)
+        {
+            s.source.Stop();
+        }
+        Play(SoundNames.Finish);
+    }
  
 }

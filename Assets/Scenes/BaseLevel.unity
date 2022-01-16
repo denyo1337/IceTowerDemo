@@ -3657,7 +3657,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 346915641}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.4, y: -6.58, z: -8}
+  m_LocalPosition: {x: -3.4, y: -6.580001, z: -8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1055775285}
@@ -34219,10 +34219,10 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 937298814}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 4b8f769a69f11934abc1543b50ddc5bb, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 0.4
   m_Pitch: 1
@@ -34715,16 +34715,16 @@ MonoBehaviour:
   m_ZDamping: 0.1
   m_TargetMovementOnly: 1
   m_ScreenX: 0.5
-  m_ScreenY: 0.69
+  m_ScreenY: 0.68999994
   m_CameraDistance: 8
-  m_DeadZoneWidth: 0.53
-  m_DeadZoneHeight: 0.5
+  m_DeadZoneWidth: 0.72
+  m_DeadZoneHeight: 0.29
   m_DeadZoneDepth: 0
   m_UnlimitedSoftZone: 0
-  m_SoftZoneWidth: 1.03
+  m_SoftZoneWidth: 0.89
   m_SoftZoneHeight: 0.87
-  m_BiasX: -0.00999999
-  m_BiasY: 0.029999822
+  m_BiasX: 0.032999944
+  m_BiasY: 0.02999953
   m_CenterOnActivate: 1
   m_GroupFramingMode: 2
   m_AdjustmentMode: 0
@@ -36084,7 +36084,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1196250724}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.4, y: -6.58, z: -8}
+  m_LocalPosition: {x: -3.4, y: -6.580001, z: -8}
   m_LocalScale: {x: -0.27, y: 0.42, z: 0.99}
   m_Children:
   - {fileID: 1508637362}
@@ -41533,6 +41533,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85072b60a09ad01428464984073b4000, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sounds:
+  - clip: {fileID: 8300000, guid: ae1a96acecdce07469ffd64ceb09746b, type: 3}
+    volume: 0.109
+    pitch: 1
+    name: Theme
+    source: {fileID: 0}
+    loop: 1
+  - clip: {fileID: 8300000, guid: b7a9dd4055b2fec4dbdfd7be26fc540f, type: 3}
+    volume: 0.13
+    pitch: 1
+    name: Jump
+    source: {fileID: 0}
+    loop: 0
+  - clip: {fileID: 8300000, guid: bed78ac28cb43ae419eb01306f006059, type: 3}
+    volume: 0.29
+    pitch: 1
+    name: CoinPickUp
+    source: {fileID: 0}
+    loop: 0
+  - clip: {fileID: 8300000, guid: ab8e0601059d6694ebcef72bce247e49, type: 3}
+    volume: 0.13
+    pitch: 1
+    name: Boost
+    source: {fileID: 0}
+    loop: 0
+  - clip: {fileID: 8300000, guid: a00133278ae0e3c439814c53e2b23174, type: 3}
+    volume: 0.247
+    pitch: 0.26
+    name: CoinBoost
+    source: {fileID: 0}
+    loop: 0
 --- !u!4 &1819417975
 Transform:
   m_ObjectHideFlags: 0

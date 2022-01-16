@@ -100,6 +100,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ice-slider-1 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8885548906619196909, guid: b04722962ea72634a86556ba48ce8de2,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 2f49168b7630dcb488e62ecf20571986, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b04722962ea72634a86556ba48ce8de2, type: 3}
 --- !u!4 &3301919214961777973 stripped
@@ -175,6 +180,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ice-slider-1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8885548906619196909, guid: b04722962ea72634a86556ba48ce8de2,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 2f49168b7630dcb488e62ecf20571986, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b04722962ea72634a86556ba48ce8de2, type: 3}
 --- !u!4 &4805288703624851912 stripped
@@ -250,6 +260,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ice-slider-1 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8885548906619196909, guid: b04722962ea72634a86556ba48ce8de2,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 2f49168b7630dcb488e62ecf20571986, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b04722962ea72634a86556ba48ce8de2, type: 3}
 --- !u!4 &8114897610229641592 stripped

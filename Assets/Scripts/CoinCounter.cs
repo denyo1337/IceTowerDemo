@@ -8,6 +8,7 @@ public class CoinCounter : MonoBehaviour
 {
     public TextMeshProUGUI score;
     public static int coinAmmount;
+    public int coinAtFinishedLine = 0 ;
     void Awake()
     {
         score = GetComponent<TextMeshProUGUI>();
@@ -15,5 +16,6 @@ public class CoinCounter : MonoBehaviour
     void Update()
     {
         score.text = $"Coins: {coinAmmount}";
+        coinAtFinishedLine = coinAmmount;
     }
 }

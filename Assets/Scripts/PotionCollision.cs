@@ -11,7 +11,7 @@ public class PotionCollision : MonoBehaviour
     // Start is called before the first frame update
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        _playerController.m_Rigidbody2D.AddForce(new Vector2(0f, 800f));
+        _playerController.m_Rigidbody2D.AddForce(new Vector2(0f, 1200f));
         animator.SetBool("Bonus", isBonusActive);
 
         //AudioManager finding sound and playing it;
