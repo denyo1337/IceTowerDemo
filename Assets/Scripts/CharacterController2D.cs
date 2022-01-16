@@ -64,6 +64,7 @@ public class CharacterController2D : MonoBehaviour
             if (isGrounded)
             {
 				m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
+				FindObjectOfType<AudioManager>().Play(SoundNames.Jump);
 			}
 		}
 	}

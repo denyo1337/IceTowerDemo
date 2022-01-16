@@ -29,6 +29,7 @@ public class AudioManager : MonoBehaviour
     private void Start()
     {
         Play(SoundNames.Theme);
+
     }
     public void Play(SoundNames sound)
     {
