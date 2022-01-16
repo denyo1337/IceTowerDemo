@@ -12,7 +12,8 @@ public class AudioManager : MonoBehaviour
         Theme,
         Boost,
         Finish,
-        CoinPickUp
+        CoinPickUp,
+        CoinBoost
     }
     void Awake()
     {

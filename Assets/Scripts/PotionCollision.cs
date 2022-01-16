@@ -16,7 +16,6 @@ public class PotionCollision : MonoBehaviour
 
         //AudioManager finding sound and playing it;
         FindObjectOfType<AudioManager>().Play(SoundNames.Boost);
-
         Destroy(gameObject);
     }
 }
