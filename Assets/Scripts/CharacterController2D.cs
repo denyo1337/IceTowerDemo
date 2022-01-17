@@ -4,9 +4,12 @@ using static AudioManager;
 
 public class CharacterController2D : MonoBehaviour
 {
-	[SerializeField] private float m_JumpForce = 1200f;
-	[Range(0, .3f)] [SerializeField] private float m_MovementSmoothing = .05f;
-	[SerializeField] private LayerMask m_WhatIsGround;
+	[SerializeField] 
+	private float m_JumpForce = 1200f;
+	[SerializeField] 
+	private float m_MovementSmoothing = .05f;
+	[SerializeField] 
+	private LayerMask m_WhatIsGround;
 	public bool isGrounded = false;
 	[SerializeField] float speedFactor = 4f;
 	public Rigidbody2D m_Rigidbody2D;
@@ -17,7 +20,6 @@ public class CharacterController2D : MonoBehaviour
 	public UnityEvent OnLandEvent;
 	[System.Serializable]
 	public class BoolEvent : UnityEvent<bool> { }
-	public BoolEvent OnCrouchEvent;
 
     private void Awake()
 	{	
@@ -25,9 +27,6 @@ public class CharacterController2D : MonoBehaviour
 
 		if (OnLandEvent == null)
 			OnLandEvent = new UnityEvent();
-
-		if (OnCrouchEvent == null)
-			OnCrouchEvent = new BoolEvent();
 	}
 	private void FixedUpdate()
 	{

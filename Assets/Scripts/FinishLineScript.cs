@@ -14,5 +14,6 @@ public class FinishLineScript : MonoBehaviour
         isRunning = false;
         Destroy(FindObjectOfType<PlayerMovement>());
         Destroy(FindObjectOfType<CharacterController2D>());
+        collision.gameObject.GetComponent<CircleCollider2D>().sharedMaterial = null; // delete friction
     }
 }
