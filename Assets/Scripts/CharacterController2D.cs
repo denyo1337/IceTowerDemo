@@ -6,14 +6,9 @@ public class CharacterController2D : MonoBehaviour
 {
 	[SerializeField] private float m_JumpForce = 1200f;
 	[Range(0, .3f)] [SerializeField] private float m_MovementSmoothing = .05f;
-	[SerializeField] private bool m_AirControl = false;
 	[SerializeField] private LayerMask m_WhatIsGround;
-	[SerializeField] private Transform m_CeilingCheck;
-	[SerializeField] private Collider2D m_CrouchDisableCollider;
 	public bool isGrounded = false;
-	const float k_GroundedRadius = .2f;
 	[SerializeField] float speedFactor = 4f;
-	const float k_CeilingRadius = .2f;
 	public Rigidbody2D m_Rigidbody2D;
 	private bool m_FacingRight = true;
 	private Vector3 m_Velocity = Vector3.zero;
@@ -23,7 +18,6 @@ public class CharacterController2D : MonoBehaviour
 	[System.Serializable]
 	public class BoolEvent : UnityEvent<bool> { }
 	public BoolEvent OnCrouchEvent;
-	private bool m_wasCrouching = false;
 
     private void Awake()
 	{	

@@ -25,7 +25,6 @@ public class PlayerMovement : MonoBehaviour
     {
        controller.Move(horizontalMove * Time.fixedDeltaTime, jump);
        jump = false;
-      
     }
     public void OnLading()
     {
